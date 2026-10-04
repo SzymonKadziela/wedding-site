@@ -7,7 +7,7 @@ export function InfoCard({ icon, title, body, action }) {
     <p>${body}</p>
     ${
       action
-        ? `<a class="button secondary" target="_blank" rel="noopener" href="${action.href}">${action.label} ↗</a>`
+        ? `<a class="button secondary" target="_blank" rel="noopener" href="${action.href}">${action.label} <span aria-hidden="true">&#8599;&#xFE0E;</span></a>`
         : ''
     }
   </article>`;

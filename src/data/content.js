@@ -75,7 +75,7 @@ export const practical = {
   items: [
     { icon: '♧', title: 'Strój', text: 'Dress code: elegancko i wygodnie. Jeśli mamy ustalony konkretny motyw kolorystyczny, dopisz go tutaj.' },
     { icon: '⌂', title: 'Noclegi', text: 'Informacje o hotelach, rezerwacji pokoi i ewentualnym kodzie rabatowym uzupełnimy tutaj.' },
-    { icon: '↗', title: 'Dojazd i parking', text: 'Sprawdźcie wcześniej trasę. Informacje o parkingu i ewentualnym transporcie dla gości pojawią się tutaj.' },
+    { icon: '\u2197\uFE0E', title: 'Dojazd i parking', text: 'Sprawdźcie wcześniej trasę. Informacje o parkingu i ewentualnym transporcie dla gości pojawią się tutaj.' },
     { icon: '♡', title: 'Prezenty', text: 'Najważniejsza jest dla nas Wasza obecność. Wskazówki dotyczące prezentów można dodać w tym miejscu.' },
   ],
 };
