@@ -1,18 +1,18 @@
 :root {
   /* paleta */
-  --paper: #f5daba;
-  --paper-alt: #e0c8ab;   /* tło co drugiej sekcji */
+  --paper: #FFB7B6;
+  --paper-alt: #c0cff0;   /* tło co drugiej sekcji */
   --rsvp-bg: #e9eee5;
   --ink: #44352F;
   --muted: #766860;
-  --green: #7E8E73;
-  --sage: #ffc75e;
+  --green: #DE3466;
+  --sage: #ff9b3d;
   --rose: #C98682;
   --line: #E3D4C7;
   --white: #FFFDF9;
-  --burgundy: #d499bd;
+  --burgundy: #E00A26;
   --wine: #c593b2;
-  --gold: #C5A15B;
+  --gold: #ff9b3d;
   --wood: #7A5A46;
 
   /* typografia */
