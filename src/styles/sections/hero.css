@@ -13,17 +13,6 @@
     var(--paper);
 }
 
-.hero::before,
-.hero::after {
-  content: '✳';
-  position: absolute;
-  color: #A9B39A;
-  font-size: clamp(90px, 18vw, 210px);
-  opacity: .3;
-  line-height: 1;
-}
-.hero::before { left: -40px; top: 8%; transform: rotate(-20deg); }
-.hero::after { right: -35px; bottom: 6%; transform: rotate(25deg); }
 
 .hero-inner { position: relative; z-index: 1; max-width: 760px; }
 .hero .eyebrow { margin-bottom: 24px; }
