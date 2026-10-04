@@ -1,0 +1,18 @@
+.faq { max-width: 760px; margin: 30px auto 0; }
+
+.faq details { border-bottom: 1px solid var(--line); padding: 19px 2px; }
+
+.faq summary {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.faq summary::after { content: '+'; font-family: var(--sans); color: var(--burgundy); }
+.faq details[open] summary::after { content: '−'; }
+
+.faq details p { color: var(--muted); margin: 13px 25px 0 0; font-size: .94rem; }

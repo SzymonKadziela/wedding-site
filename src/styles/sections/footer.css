@@ -1,0 +1,17 @@
+.footer {
+  background: var(--wood);
+  color: rgba(247, 239, 229, .8);
+  text-align: center;
+  padding: 35px 20px 42px;
+  font-size: .8rem;
+}
+
+.footer .names {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--gold);
+  margin-bottom: 5px;
+}
+
+.footer-note { margin-top: 10px; font-size: .7rem; }

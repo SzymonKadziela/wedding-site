@@ -1,0 +1,30 @@
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+
+.cards--single { grid-template-columns: minmax(0, 520px); justify-content: center; }
+
+.info-card {
+  background: rgba(255, 253, 249, .88);
+  border: 1px solid var(--line);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.info-card p { color: var(--muted); font-size: .93rem; }
+.info-card .button { margin-top: 5px; }
+
+.icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--sage);
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .cards,
+  .cards--single { grid-template-columns: 1fr; }
+  .info-card { padding: 25px; }
+}

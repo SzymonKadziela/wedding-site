@@ -1,0 +1,8 @@
+.rsvp { background: var(--rsvp-bg); text-align: center; padding: 75px 20px; }
+.rsvp p { color: var(--muted); max-width: 520px; margin: 0 auto 25px; }
+
+.rsvp-email { margin-bottom: 18px; font-weight: 600; color: var(--ink); }
+.rsvp-email a { text-underline-offset: 3px; }
+
+.rsvp-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.rsvp-actions .button { cursor: pointer; font-family: inherit; }
