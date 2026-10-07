@@ -28,7 +28,7 @@ export const timeline = {
   title: 'Plan dnia',
   intro: 'Orientacyjny harmonogram naszego świętowania. Godziny możesz później łatwo zmienić.',
   events: [
-    { time: '14:00', title: 'Ceremonia ślubna', text: 'Na terenie Zagrody Konik Polny' },
+    { time: '14:00', title: 'Ceremonia ślubna', text: 'Na terenie Zagrody Konik Polny.' },
     { time: '15:00', title: 'Życzenia i wspólne zdjęcia', text: 'Chwila na uściski, gratulacje i pamiątkowe fotografie.' },
     { time: '16:00', title: 'Powitanie gości i obiad', text: 'Przenosimy się pod namiot weselny.' },
     { time: '17:30', title: 'Pierwszy taniec', text: 'Oficjalnie otwieramy parkiet!' },
