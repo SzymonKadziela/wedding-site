@@ -1,4 +1,4 @@
-# Strona weselna – Lena & Szymon
+# Strona weselna - Lena & Szymon
 
 Statyczna strona informacyjna dla gości. Vite + czysty JavaScript (bez frameworka).
 
@@ -38,30 +38,7 @@ src/
     sections/             style per sekcja
 ```
 
-## Publikacja
-
-Zawartość `dist/` wrzucasz na dowolny hosting statyczny
-(Netlify, Vercel, GitHub Pages, zwykły serwer FTP).
-
 ## Galeria zdjęć od gości (Cloudinary)
 
 Goście wgrywają zdjęcia z telefonu, a strona pokazuje je w galerii. Zdjęcia trzyma Cloudinary
 (darmowy plan wystarcza na wesele). Dopóki nie uzupełnisz konfiguracji, sekcja jest ukryta.
-
-1. Załóż konto na https://cloudinary.com i skopiuj **Cloud name** z Dashboardu.
-2. **Settings → Upload → Upload presets → Add upload preset**:
-   - *Signing mode*: **Unsigned**
-   - *Asset folder* (opcjonalnie): `wesele`
-   - zapisz i skopiuj **nazwę presetu**.
-3. **Settings → Security** → w sekcji *Restricted media types* **odznacz „Resource list"**
-   (bez tego galeria nie może pobrać listy zdjęć).
-4. Wpisz `cloudName` i `uploadPreset` w `src/data/content.js` (obiekt `gallery`).
-5. `npm run build` i wrzuć `dist/` na hosting.
-
-**Usuwanie zdjęć** (np. niechcianych): Cloudinary → *Media Library* → wybierz zdjęcie → Delete.
-Lista zdjęć jest cache'owana przez CDN (do ok. godziny), więc usunięte zdjęcie może jeszcze chwilę
-być widoczne po odświeżeniu. Świeżo wgrane zdjęcia gość widzi od razu.
-
-**Uwaga o prywatności:** `cloudName` i nazwa presetu trafiają do publicznego kodu strony, więc każdy,
-kto ma link do strony, może zdjęcia obejrzeć i wgrać. Nie podawaj linku publicznie.
-Warto też w presecie ustawić limit rozmiaru i dozwolone formaty.
