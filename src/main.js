@@ -5,6 +5,7 @@ import { formatWeddingDate, formatShortDate } from './lib/format.js';
 import { startCountdown } from './lib/countdown.js';
 import { initCopyButtons } from './lib/copy.js';
 import { initGallery } from './lib/gallery.js';
+import { initSlots } from './lib/slots.js';
 import { Hero } from './components/hero.js';
 import { Countdown } from './components/countdown.js';
 import { Story } from './components/story.js';
@@ -14,6 +15,7 @@ import { Menu } from './components/menu.js';
 import { Practical } from './components/practical.js';
 import { Gallery } from './components/gallery.js';
 import { Faq } from './components/faq.js';
+import { Slots } from './components/slots.js';
 import { Contact } from './components/contact.js';
 import { Footer } from './components/footer.js';
 
@@ -30,6 +32,7 @@ app.innerHTML = [
   Practical(),
   Gallery(),
   Faq(),
+  Slots(),
   Contact(),
   Footer(formatShortDate(date)),
 ].join('');
@@ -37,3 +40,4 @@ app.innerHTML = [
 startCountdown(app, date);
 initCopyButtons(app);
 initGallery(app);
+initSlots(app);

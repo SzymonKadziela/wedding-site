@@ -121,3 +121,23 @@ export const gallery = {
   maxFileMB: 10,       // limit planu darmowego Cloudinary
   maxFilesPerBatch: 20,
 };
+
+export const slots = {
+  id: 'zabawa',
+  eyebrow: 'Chwila zabawy',
+  title: 'Weselne sloty',
+  intro: 'Spróbuj szczęścia! Gra jest w pełni darmowa.',
+  disclaimer: 'Punkty są wirtualne, nic nie kosztują i nic nie dają. Zabawa tylko dla rozrywki.',
+  symbols: ['💍', '🥂', '💐', '🎂', '💃', '❤️'],
+  startPoints: 100,
+  spinCost: 10,
+  payouts: { triple: 100, pair: 20 },
+  spinMs: 2200,   // czas kręcenia pierwszego bębna (ms)
+  stepMs: 900,    // o ile dłużej kręci się każdy kolejny bęben (ms)
+  messages: {
+    triple: 'JACKPOT! Trzy takie same 🎉',
+    pair: 'Dwa takie same, całkiem nieźle!',
+    lose: 'Nie tym razem. Spróbuj jeszcze raz!',
+    broke: 'Skończyły się punkty. Zacznij od nowa!',
+  },
+};

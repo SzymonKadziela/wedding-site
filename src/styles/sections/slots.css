@@ -1,0 +1,66 @@
+.slot-machine {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 30px 26px 34px;
+  text-align: center;
+  background: var(--white);
+  border: 2px solid var(--burgundy);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(107, 45, 58, .12);
+}
+
+.slot-points { font-size: .9rem; color: var(--muted); margin-bottom: 18px; }
+.slot-points strong { font-family: var(--serif); font-size: 1.6rem; color: var(--burgundy); font-weight: 500; }
+
+.reels { display: flex; justify-content: center; gap: 10px; margin-bottom: 18px; }
+
+.reel {
+  width: 92px;
+  height: 104px;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: inset 0 4px 10px rgba(68, 53, 47, .1);
+  position: relative;
+  overflow: hidden;
+}
+.reel.is-spinning { animation: reel-shake .14s linear infinite; filter: blur(1.5px); }
+
+@keyframes reel-shake {
+  0%   { transform: translateY(-4px); }
+  50%  { transform: translateY(4px); }
+  100% { transform: translateY(-4px); }
+}
+
+.slot-message { min-height: 1.6em; margin: 0 0 18px; font-weight: 600; color: var(--ink); }
+
+.slot-machine .button { cursor: pointer; font-family: inherit; }
+.slot-machine .button:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+
+.slot-disclaimer { text-align: center; font-size: .78rem; color: var(--muted); margin: 18px 0 0; }
+
+@media (max-width: 420px) {
+  .reel { width: 80px; height: 92px; font-size: 2.6rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reel.is-spinning { animation: none; filter: none; }
+}
+
+.slot-sound {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper);
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.slot-sound:hover { background: var(--sage); }
